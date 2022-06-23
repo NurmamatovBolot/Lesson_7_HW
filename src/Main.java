@@ -1,26 +1,9 @@
 public class Main {
     public static void main(String[] args) {
 
-        Magic magic = new Magic() {
-            @Override
-            public void applySuperAbility() {
-                System.out.println("Magic has applied super ability: Freeze");
-            }
-        };
-
-        Medic medic = new Medic() {
-            @Override
-            public void applySuperAbility() {
-                System.out.println("Medic has applied super ability: Heal");
-            }
-        };
-        
-        Warrior warrior = new Warrior() {
-            @Override
-            public void applySuperAbility() {
-                System.out.println("Warrior has applied super ability: Critical Damage");
-            }
-        };
+        Medic medic = new Medic();
+        Magic magic = new Magic();
+        Warrior warrior = new Warrior();
 
 
         Hero [] heroes = {magic, medic, warrior};
